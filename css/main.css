@@ -63,6 +63,7 @@ img {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -494,7 +495,6 @@ img {
 
 .staff-section__item {
   width: 450px;
-  height: 460px;
   background-color: var(--primary-color);
 }
 .staff-section__item:not(:last-child) {
@@ -505,7 +505,6 @@ img {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -513,7 +512,6 @@ img {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
     width: 270px;
-    height: 260px;
   }
 }
 

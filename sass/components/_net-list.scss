@@ -1,0 +1,35 @@
+.net-list {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    gap: 10px;
+}
+
+.net-list__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.net-list__icon {
+    fill: var(--net-icons-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .net-list__link:hover & {
+        fill: var(--primary-color);
+    }
+
+    .net-list__link:focus & {
+        fill: var(--primary-color);
+    }
+}

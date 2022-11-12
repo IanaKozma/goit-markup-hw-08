@@ -9,7 +9,7 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        gap: 73px;
+        gap: 93px;
         align-items: baseline;
         text-align: left;
     }
@@ -19,19 +19,15 @@
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        gap: 93px;
     }
  }
 
 .footer-logo {
     margin-bottom: 20px;
+    margin-right: 0;
     padding: 0;
-
-    @media screen and (min-width: 768px) {
-        padding-left: 100px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-left: 0;
-    }
 }
 
 .footer-list__item:not(:last-child) {
@@ -50,6 +46,7 @@
     color: var(--primary-color);
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .contacts-footer__link {
@@ -82,13 +79,9 @@
 
 .address-box {
     margin-bottom: 60px;
-    padding-left: auto;
 
-    @media screen and (min-width: 768px) {
-        padding-left: 76px;
-    }
     @media screen and (min-width: 1200px) {
-        padding-left: auto;
+        margin-bottom: 0;
     }
 }
 
@@ -121,14 +114,6 @@
 
 .social-box {
     margin-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
-        margin-right: 89px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-left: 70px;
-        margin-right: 93px;
-    }
 }
 
 .subscription-box {

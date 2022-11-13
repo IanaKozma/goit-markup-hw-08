@@ -189,6 +189,7 @@ img {
 
 .site-nav__link-contacts {
   color: var(--primary-text-color);
+  font-size: 12px;
 }
 @media screen and (min-width: 768px) {
   .site-nav__link-contacts {
@@ -203,6 +204,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 14px;
   }
 }
 
@@ -308,8 +310,19 @@ img {
           transform: translateX(0);
 }
 
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
 .mobile-menu__nav {
-  margin-bottom: 306px;
   list-style: none;
 }
 .mobile-menu__nav .link {
@@ -405,27 +418,32 @@ img {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("../images/hero-480@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-480@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-480@2x.jpg");
   }
 }
 @media (min-width: 481px) {
   .overlay {
-    background-image: url("../images/hero-768.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-768.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768.jpg");
   }
 }
 @media (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("../images/hero-768@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-768@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-768@2x.jpg");
   }
 }
 @media (min-width: 769px) {
   .overlay {
-    background-image: url("../images/hero-1600.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-1600.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600.jpg");
   }
 }
 @media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("../images/hero-1600@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-1600@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-1600@2x.jpg");
   }
 }
 .hero-title {
@@ -664,7 +682,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 14px;
   font-size: 12px;
   line-height: 1.71;
 }
@@ -768,6 +785,9 @@ img {
         flex-basis: calc((100% - 30px) / 2);
     width: 354px;
   }
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .advantages-list__item {
@@ -801,6 +821,12 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages-list__title {
+    text-align: left;
+  }
 }
 
 .advantages-list__text {
@@ -831,13 +857,14 @@ img {
   margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -915,6 +942,11 @@ img {
 .staff-item__description {
   padding-top: 30px;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .staff-item__description {
+    padding-bottom: 30px;
+  }
 }
 
 .staff-section__title {
@@ -1001,6 +1033,7 @@ img {
 
 .clients-list__item {
   width: 210px;
+  height: 92px;
 }
 @media screen and (min-width: 420px) {
   .clients-list__item {
@@ -1083,9 +1116,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;

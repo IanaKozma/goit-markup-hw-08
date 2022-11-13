@@ -87,6 +87,7 @@
 
 .site-nav__link-contacts {
     color: var(--primary-text-color);
+    font-size: 12px;
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -94,6 +95,7 @@
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
+        font-size: 14px;
     }
 }
 

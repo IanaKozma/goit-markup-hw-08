@@ -47,8 +47,13 @@
     } 
 }
 
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .mobile-menu__nav {
-    margin-bottom: 306px;
     list-style: none;
 
     & .link {

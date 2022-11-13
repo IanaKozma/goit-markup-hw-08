@@ -18,6 +18,7 @@
 
 .clients-list__item {
     width: 210px;
+    height: 92px;
 
     @media screen and (min-width: 420px) {
         flex-basis: calc((100% - 30px) / 2);

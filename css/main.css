@@ -70,6 +70,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -320,10 +325,12 @@ img {
           flex-direction: column;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  height: 100%;
 }
 
 .mobile-menu__nav {
   list-style: none;
+  margin-bottom: auto;
 }
 .mobile-menu__nav .link {
   display: block;
@@ -345,19 +352,27 @@ img {
   margin-bottom: 32px;
 }
 
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
 .mobile-menu__contacts-phone {
   display: block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .mobile-menu__contacts-phone {
+    font-size: 34px;
+  }
+}
 
 .mobile-menu__contacts-mail {
   display: block;
-  margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -372,10 +387,15 @@ img {
 }
 .mobile-menu__social .link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__social .link {
+    font-size: 18px;
+  }
 }
 
 .mobile-menu__social-item:not(:last-child) {
@@ -447,7 +467,7 @@ img {
   }
 }
 .hero-title {
-  width: 360px;
+  max-width: 360px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -464,7 +484,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -774,7 +794,7 @@ img {
 }
 
 .advantages-list__item {
-  width: 450px;
+  max-width: 450px;
 }
 .advantages-list__item:not(:last-child) {
   margin-bottom: 30px;
@@ -914,7 +934,7 @@ img {
 }
 
 .staff-section__item {
-  width: 450px;
+  max-width: 450px;
   background-color: var(--primary-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1020,7 +1040,7 @@ img {
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 320px) {
   .clients-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1247,7 +1267,7 @@ img {
 }
 
 .subscription-form__input {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
@@ -1281,6 +1301,11 @@ img {
   font-size: 16px;
   line-height: 1.25px;
   color: var(--contacts-footer-color);
+}
+@media screen and (min-width: 480px) {
+  .subscription-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription-form__input {

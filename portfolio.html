@@ -18,6 +18,11 @@
             <nav class="page-header__nav">
                 <a href="" class="logo">
                     Web<span class="logo-header">Studio</span></a>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="24" height="16">
+                        <use href="./images/icons.svg#icon-open-menu"></use>
+                    </svg>
+                </button>
         
                 <ul class="site-nav">
                     <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
@@ -46,7 +51,7 @@
             <div class="container">
                 <h1 class="visually-hidden">Наші роботи</h1>
                 <ul class="portfolio__buttons-list">
-                    <li class="buttons-list__item"><button class="button" type="button">Усі</button></li>
+                    <li class="buttons-list__item"><button class="button button-first" type="button">Усі</button></li>
                     <li class="buttons-list__item"><button class="button" type="button">Веб-сайти</button></li>
                     <li class="buttons-list__item"><button class="button" type="button">Додатки</button></li>
                     <li class="buttons-list__item"><button class="button" type="button">Дизайн</button></li>
@@ -57,7 +62,16 @@
                     <li class="works-list__item">
                             <a href="" class="works-list__link">
                                 <div class="product-thumb">
-                                    <img src="./images/technokriak.jpg" alt="Website technokriak" width="370" height="294">
+                                    <img 
+                                    srcset="
+                                    ./images/technokriak-370.jpg 370w,
+                                    ./images/technokriak-370@2x.jpg 370w,
+                                    ./images/technokriak-354.jpg 354w,
+                                    ./images/technokriak-354@2x.jpg 354w,
+                                    ./images/technokriak-450.jpg 450w,
+                                    ./images/technokriak-450@2x.jpg 450w"
+                                    src="./images/technokriak-354.jpg" alt="Website technokriak"
+                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                     <div class="product-overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -71,7 +85,16 @@
                     <li class="works-list__item">
                         <a href="" class="works-list__link">
                             <div class="product-thumb">
-                                <img src="./images/poster-new-orlean.jpg" alt="Poster New Orlean vs Golden Star" width="370" height="294">
+                                <img 
+                                srcset="
+                                ./images/poster-370.jpg 370w,
+                                ./images/poster-370@2x.jpg 370w,
+                                ./images/poster-354.jpg 354w,
+                                ./images/poster-354@2x.jpg 354w,
+                                ./images/poster-450.jpg 450w,
+                                ./images/poster-450@2x.jpg 450w"
+                                src="./images/poster-354.jpg" alt="Poster New Orlean vs Golden Star" 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                 <div class="product-overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -85,7 +108,16 @@
                     <li class="works-list__item">
                         <a href="" class="works-list__link">
                             <div class="product-thumb">
-                                <img src="./images/seafood-restaurant.jpg" alt="Restaurant Seafood" width="370" height="294">
+                                <img 
+                                srcset="
+                                ./images/seafood-370.jpg 370w,
+                                ./images/seafood-370@2x.jpg 370w,
+                                ./images/seafood-354.jpg 354w,
+                                ./images/seafood-354@2x.jpg 354w,
+                                ./images/seafood-450.jpg 450w,
+                                ./images/seafood-450@2x.jpg 450w"
+                                src="./images/seafood-354.jpg" alt="Restaurant Seafood" 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                 <div class="product-overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                         отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -100,7 +132,16 @@
                     <li class="works-list__item">
                         <a href="" class="works-list__link">
                             <div class="product-thumb">
-                                <img src="./images/earphones.jpg" alt="Earphones" width="370" height="294">
+                                <img 
+                                srcset="
+                                ./images/earphones-370.jpg 370w,
+                                ./images/earphones-370@2x.jpg 370w,
+                                ./images/earphones-354.jpg 354w,
+                                ./images/earphones-354@2x.jpg 354w,
+                                ./images/earphones-450.jpg 450w,
+                                ./images/earphones-450@2x.jpg 450w"
+                                src="./images/earphones-354.jpg" alt="Earphones" 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                 <div class="product-overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                         отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -115,7 +156,16 @@
                     <li class="works-list__item">
                         <a href="" class="works-list__link">
                             <div class="product-thumb">
-                                <img src="./images/boxes.jpg" alt="Boxes" width="370" height="294">
+                                <img 
+                                srcset="
+                                ./images/boxes-370.jpg 370w,
+                                ./images/boxes-370@2x.jpg 370w,
+                                ./images/boxes-354.jpg 354w,
+                                ./images/boxes-354@2x.jpg 354w,
+                                ./images/boxes-450.jpg 450w,
+                                ./images/boxes-450@2x.jpg 450w"
+                                src="./images/boxes-354.jpg" alt="Boxes" 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                 <div class="product-overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                         отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -130,7 +180,16 @@
                     <li class="works-list__item">
                         <a href="" class="works-list__link">
                             <div class="product-thumb">
-                                <img src="./images/computer.jpg" alt="Computer" width="370" height="294">
+                                <img 
+                                srcset="
+                                ./images/computer-370.jpg 370w,
+                                ./images/computer-370@2x.jpg 370w,
+                                ./images/computer-354.jpg 354w,
+                                ./images/computer-354@2x.jpg 354w,
+                                ./images/computer-450.jpg 450w,
+                                ./images/computer-450@2x.jpg 450w"
+                                src="./images/computer-354.jpg" alt="Computer" 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                 <div class="product-overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                         отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -145,7 +204,16 @@
                     <li class="works-list__item">
                         <a href="" class="works-list__link">
                             <div class="product-thumb">
-                                <img src="./images/limited-edition.jpg" alt="Magazine limited edition" width="370" height="294">
+                                <img 
+                                srcset="
+                                ./images/magazine-370.jpg 370w,
+                                ./images/magazine-370@2x.jpg 370w,
+                                ./images/magazine-354.jpg 354w,
+                                ./images/magazine-354@2x.jpg 354w,
+                                ./images/magazine-450.jpg 450w,
+                                ./images/magazine-450@2x.jpg 450w"
+                                src="./images/magazine-354.jpg" alt="Magazine limited edition" 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                 <div class="product-overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                         отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -160,7 +228,16 @@
                     <li class="works-list__item">
                         <a href="" class="works-list__link">
                             <div class="product-thumb">
-                                <img src="./images/label.jpg" alt="Label" width="370" height="294">
+                                <img 
+                                srcset="
+                                ./images/label-370.jpg 370w,
+                                ./images/label-370@2x.jpg 370w,
+                                ./images/label-354.jpg 354w,
+                                ./images/label-354@2x.jpg 354w,
+                                ./images/label-450.jpg 450w,
+                                ./images/label-450@2x.jpg 450w"
+                                src="./images/label-354.jpg" alt="Label" 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                 <div class="product-overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                         отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -175,7 +252,16 @@
                     <li class="works-list__item">
                         <a href="" class="works-list__link">
                             <div class="product-thumb">
-                                <img src="./images/laptop.jpg" alt="Laptop" width="370" height="294">
+                                <img 
+                                srcset="
+                                ./images/laptop-370.jpg 370w,
+                                ./images/laptop-370@2x.jpg 370w,
+                                ./images/laptop-354.jpg 354w,
+                                ./images/laptop-354@2x.jpg 354w,
+                                ./images/laptop-450.jpg 450w,
+                                ./images/laptop-450@2x.jpg 450w"
+                                src="./images/laptop-354.jpg" alt="Laptop" 
+                                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
                                 <div class="product-overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
                                         отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -194,57 +280,59 @@
 
     <footer class="page-footer">
         <div class="container footer-wrapper">
-            <div class="address-box">
-                <a href="" class="logo footer-logo">
-                    Web<span class="logo-footer">Studio</span></a>
-                <address class="footer-address">
-                    <ul class="page-footer__list">
-                        <li class="footer-list__item address">
-                            <a class="address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
-                                Українки, 26</a>
+            <div class="tablet-flex">
+                <div class="address-box">
+                    <a href="" class="logo footer-logo">
+                        Web<span class="logo-footer">Studio</span></a>
+                    <address class="footer-address">
+                        <ul class="page-footer__list">
+                            <li class="footer-list__item address">
+                                <a class="address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                    rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
+                                    Українки, 26</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="mailto:info@devstudio.com" class="contacts-footer__link">info@devstudio.com</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="tel:+380961111111" class="contacts-footer__link">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-box">
+                    <span class="footer-title">приєднуйтесь</span>
+                    <ul class="footer-net-list">
+                        <li class="footer-net-item">
+                            <a href="" class="footer-net-link">
+                                <svg class="footer-net-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer-list__item">
-                            <a href="mailto:info@devstudio.com" class="contacts-footer__link">info@devstudio.com</a>
+                        <li class="footer-net-item">
+                            <a href="" class="footer-net-link">
+                                <svg class="footer-net-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer-list__item">
-                            <a href="tel:+380961111111" class="contacts-footer__link">+38 096 111 11 11</a>
+                        <li class="footer-net-item">
+                            <a href="" class="footer-net-link">
+                                <svg class="footer-net-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-net-item">
+                            <a href="" class="footer-net-link">
+                                <svg class="footer-net-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="social-box">
-                <span class="footer-title">приєднуйтесь</span>
-                <ul class="footer-net-list">
-                    <li class="footer-net-item">
-                        <a href="" class="footer-net-link">
-                            <svg class="footer-net-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-net-item">
-                        <a href="" class="footer-net-link">
-                            <svg class="footer-net-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-net-item">
-                        <a href="" class="footer-net-link">
-                            <svg class="footer-net-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-net-item">
-                        <a href="" class="footer-net-link">
-                            <svg class="footer-net-icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
     
             <div class="subscription-box">
@@ -260,5 +348,38 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="18.67" height="18.67">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+        </button>
+    
+        <div class="mobile-menu">
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav-item"><a class="link" href="">Студія</a></li>
+                <li class="mobile-menu__nav-item"><a class="link link-current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="mobile-menu__nav-item"><a class="link" href="">Контакти</a></li>
+            </ul>
+    
+            <ul class="mobile-menu__contacts">
+                <li><a class="mobile-menu__contacts-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li><a class="mobile-menu__contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+    
+            <ul class="mobile-menu__social">
+                <li class="mobile-menu__social-item"><a class="link" href="">Instagram</a></li>
+                <li class="mobile-menu__social-item"><a class="link" href="">Twitter</a></li>
+                <li class="mobile-menu__social-item"><a class="link" href="">Facebook</a></li>
+                <li class="mobile-menu__social-item"><a class="link" href="">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>  
 </html>

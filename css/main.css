@@ -1399,7 +1399,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .portfolio__buttons-list {
-    width: 400px;
+    max-width: 400px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1431,7 +1431,7 @@ img {
 }
 
 .works-list__item {
-  width: 450px;
+  max-width: 450px;
   border: 1px solid var(--portfolio-card-border);
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1499,13 +1499,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .product-overlay {
-    width: 354px;
+    max-width: 354px;
     padding-top: 49px;
   }
 }
 @media screen and (min-width: 1200px) {
   .product-overlay {
-    width: 370px;
+    max-width: 370px;
     padding: 63px 24px;
   }
 }
